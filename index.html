@@ -7,10 +7,21 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#050505" />
-    <title>MaysMelody Media Player</title>
+     <title>MaysMelody Media Player</title>
+    <script>
+      window.onerror = function(msg, url, line) {
+        document.body.innerHTML = '<div style="color:white;padding:20px;font-family:sans-serif;"><h1>System Error</h1><p>' + msg + '</p><p>' + url + ' L' + line + '</p></div>';
+      };
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div style="height:100vh; display:flex; align-items:center; justify-content:center; background:#050505; color:white; font-family:sans-serif; flex-direction:column;">
+        <div style="width:40px; height:40px; border:2px solid rgba(255,255,255,0.1); border-top-color:#2563eb; border-radius:50%; animation:spin 1s linear infinite; margin-bottom:20px;"></div>
+        <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+        <div style="font-size:10px; font-weight:900; letter-spacing:0.3em; text-transform:uppercase; color:rgba(255,255,255,0.4);">Initializing MaysMelody</div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
