@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🎵 MaysMelody Media Player
 
-# Run and deploy your AI Studio app
+An immersive, standalone geometric media player for Android, iOS, and Desktop. Built for high-performance audio and video playback with a precision-engineered "Geometric Balance" interface.
 
-This contains everything you need to run your app locally.
+## 🚀 Quick Start (Desktop)
 
-View your app in AI Studio: https://ai.studio/apps/afcf07b5-b164-40ce-8e5f-e5f257825374
+If you have downloaded this project, you can start it with a single click:
 
-## Run Locally
+### Windows
+1. Double-click **`START_APP.bat`**
+2. The app will open in your browser at `http://localhost:3000`
 
-**Prerequisites:**  Node.js
+### MacOS / Linux
+1. Open your terminal in this folder.
+2. Run `bash START_APP.sh`
+3. The app will open in your browser at `http://localhost:3000`
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📱 Mobile Installation (Android / iOS)
+
+This app is a **Progressive Web App (PWA)**. To install it as a standalone app on your phone:
+
+1. Open the hosted URL in Chrome (Android) or Safari (iOS).
+2. Tap the **Menu/Share** button.
+3. Select **"Add to Home Screen"**.
+4. MaysMelody will now appear as a native icon on your home screen with background playback support.
+
+## 🛠 Manual Setup
+
+If you want to run it manually using the terminal:
+
+1. `npm install` - Install dependencies.
+2. `npm run dev` - Start development server.
+3. `npm run build` - Create a production-ready version in the `dist/` folder.
+
+## ✨ Features
+- **Geometric Balance UI**: High-contrast, structured design.
+- **Background Playback**: Keep listening while using other apps or with the screen off.
+- **Hybrid Support**: Play both Audio (.mp3, .wav) and Video (.mp4, .mkv, .mov).
+- **Offline Ready**: Works directly with your local file system.
+- **Real-Time Search**: Quickly filter your media database.
